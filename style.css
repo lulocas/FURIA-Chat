@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Race Sport";
+    src: url("RaceSportRegular.woff");
+}
+body, html{
+    height: 100%;
+}
+p, span, a, th, td{
+    font-family: "Race Sport";
+}
+#time, #ultPartida, #Pcamp{
+    font-size: 40px;
+    padding-top: 40px;
+}
+#caixa1{
+    background-image: url(F3rTXpzXkAAXlyD-1536x1024.jpg);
+}
+#caixa2{
+    background-image: url(fundoPreto.webp);
+}
+#caixa4{
+    background-image: url(fundoAmarelo.jpeg);
+}
+.caixas{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#tabela{
+    width: 80%;
+    margin-left: 10%;
+}
+table{
+    border-radius: 25px;
+}
+td a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(37, 36, 36);
+}
+td a:hover{
+    color:rgb(46, 79, 211);
+    text-decoration: none;
+}
+#carrossel{
+    margin-left: 18%;
+    height: 100px;
+}
+#carousel-controls{
+    width:80%;
+    margin-top: 50px;
+}
+.carousel-inner {
+    position: relative;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#campeonatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+.box{
+    max-width: 400px;
+    border-radius: 25px;
+}
+.box:hover{
+    box-shadow: 3px 3px 35px;
+}
+.box img{
+    width: 100%;
+    height: 80%;
+    border-radius: 25px 25px 0px 0px;
+}
+.legenda{
+    border-radius: 0px 0px 25px 25px;
+}
+@keyframes animation-chat{
+    from{
+        background-color:aliceblue;
+    }
+    to{
+        background-color: rgb(46, 79, 211);
+    }
+}
