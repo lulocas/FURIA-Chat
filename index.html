@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap4.1.3/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
         <title>FURIA Chat</title>
     </head>
     <body>
@@ -36,11 +38,14 @@
         </div>
         <div id="chatBox" class="hidden">
             <button id="botaoX" class="btn btn-warning float-right">X</button>
-            <div class="mensagemChat">
-                <p class="pChatBot lead text-light">Bem-vindo ao Chat da FURIA!</p>
-                <p class=" pChatBot text-light">Em que posso ajudar?</p>
+            <div id="chatWindow" class="mensagens">
+                <div class="mensagemChat">
+                    <p class="pChatBot lead text-light">Bem-vindo ao Chat da FURIA!</p>
+                    <p class="pChatBot text-light">Em que posso ajudar?</p>
+                </div>
+                <!-- Mensagens do usuário e do bot aparecerão aqui -->
             </div>
-            <div id="divSend" class="input-group  fixed-bottom">
+            <div id="divSend" class="input-group fixed-bottom">
                 <textarea class="form-control" id="userInput" placeholder="Escreva aqui..."></textarea>
                 <button id="sendButton" class="btn btn-warning">Enviar</button>
             </div>
