@@ -8,6 +8,7 @@
         <title>FURIA Chat</title>
     </head>
     <body>
+        <script src="chatBot.js"></script>
         <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
             <span class="navbar-brand">FURIA</span>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#divBar">
@@ -30,6 +31,15 @@
                 </ul>
             </div>
         </nav>
+        <div id="divBotao">
+            <button id="chatButton" class="btn">Furia</button>
+        </div>
+        <div id="chatBox" class="hidden">
+            <h3>Bem-vindo ao Chat!</h3>
+            <p>Digite sua mensagem abaixo:</p>
+            <textarea id="userInput" placeholder="Escreva aqui..."></textarea>
+            <button id="sendButton" class="btn btn-primary">Enviar</button>
+        </div>
         <div class="caixas" id="caixa1"></div>
         <div class="caixas" id="caixa2">
             <p class="text-center lead text-light" id="ultPartida">Últimas Partidas</p>
@@ -122,22 +132,22 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="img-fluid" src="Yuurih.png">
+                            <img class="img-fluid" src="/images/FalleN.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="IMG-20250424-WA0027.jpg">
+                            <img class="img-fluid" src="/images/Kaike.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="IMG-20250424-WA0028.jpg">
+                            <img class="img-fluid" src="/images/Yekindar.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="IMG-20250424-WA0029.jpg">
+                            <img class="img-fluid" src="/images/Molodoy.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="IMG-20250424-WA0030.jpg">
+                            <img class="img-fluid" src="/images/Yuurih2.0.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="IMG-20250424-WA0031.jpg">
+                            <img class="img-fluid" src="/images/Sidde.png">
                         </div>
                     </div>
                 </div>
@@ -147,21 +157,21 @@
             <p class="text-center lead" id="Pcamp">Campeonatos</p>
             <div id="campeonatos">
                 <div class="box">
-                    <img src="pgl_astana25.webp">
+                    <img src="/images/pgl_astana25.webp">
                     <div class="legenda bg-light">
                         <p class="text-center">PGL Astana 2025</p>
                         <p class="text-center text-black-50">10/05/25 à 18/05/25</p>
                     </div>
                 </div>
                 <div class="box">
-                    <img src="iem-dallas.jpg">
+                    <img src="images/iem-dallas.jpg">
                     <div class="legenda bg-light">
                         <p class="text-center">IEM Dallas 2025</p>
                         <p class="text-center text-black-50">19/05/25 à 25/05/25</p>
                     </div>
                 </div>
                 <div class="box">
-                    <img src="blasttv.jpeg">
+                    <img src="images/blasttv.jpeg">
                     <div class="legenda bg-light">
                         <p class="text-center">BLAST.tv Austin Major 2025</p>
                         <p class="text-center text-black-50">03/06/25 à 22/06/25</p>
