@@ -35,10 +35,15 @@
             <button id="chatButton" class="btn">Furia</button>
         </div>
         <div id="chatBox" class="hidden">
-            <h3>Bem-vindo ao Chat!</h3>
-            <p>Digite sua mensagem abaixo:</p>
-            <textarea id="userInput" placeholder="Escreva aqui..."></textarea>
-            <button id="sendButton" class="btn btn-primary">Enviar</button>
+            <button id="botaoX" class="btn btn-warning float-right">X</button>
+            <div class="mensagemChat">
+                <p class="pChatBot lead text-light">Bem-vindo ao Chat da FURIA!</p>
+                <p class=" pChatBot text-light">O que posso ajudar?</p>
+            </div>
+            <div id="divSend" class="input-group  fixed-bottom">
+                <textarea class="form-control" id="userInput" placeholder="Escreva aqui..."></textarea>
+                <button id="sendButton" class="btn btn-warning">Enviar</button>
+            </div>
         </div>
         <div class="caixas" id="caixa1"></div>
         <div class="caixas" id="caixa2">

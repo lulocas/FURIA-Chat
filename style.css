@@ -32,10 +32,10 @@ p, span, a, th, td{
 }
 @keyframes animation-chat{
     from {
-        background: rgba(9, 9, 121, 1) 35%; /* Posição inicial */
+        background: rgba(9, 9, 121, 1) 35%; 
     }
     to {
-        background-position: rgba(0, 212, 255, 1) 100%; /* Posição final */
+        background-position: rgba(0, 212, 255, 1) 100%; 
     }
 }
 #chatBox {
@@ -44,12 +44,51 @@ p, span, a, th, td{
     right: 60px;
     width: 500px;
     height: 600px;
-    background-color: white;
+    background-color: rgb(37, 36, 36);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 20px;
-    display: none; /* Inicialmente oculto */
-    transition: all 0.3s ease;
+    opacity: 0; 
+    transform: scale(0.8); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    pointer-events: none;
+}
+#chatBox.visible {
+    opacity: 1; 
+    transform: scale(1); 
+    pointer-events: auto; 
+}
+#botaoX{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+}
+#divSend{
+    padding: 10px;
+}
+#userInput {
+    resize: none;
+    height: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgb(58, 55, 55);
+    border: none;
+}
+.mensagemChat{
+    background-color: rgb(58, 55, 55);
+    margin-top: 20px;
+    width: 75%;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.pChatBot{
+    font-size: 15px;
+}
+
+#userInput:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
 #time, #ultPartida, #Pcamp{

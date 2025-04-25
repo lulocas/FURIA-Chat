@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("chatButton").addEventListener("click", () => {
         const chatBox = document.getElementById("chatBox");
-        if (chatBox.style.display === "none" || chatBox.style.display === "") {
-            chatBox.style.display = "block"; // Mostra o chat
+        if (chatBox.classList.contains("visible")) {
+            chatBox.classList.remove("visible"); 
         } else {
-            chatBox.style.display = "none"; // Esconde o chat
+            chatBox.classList.add("visible"); 
         }
+    });
+    document.getElementById("botaoX").addEventListener("click", () =>{
+        const chatBox = document.getElementById("chatBox");
+        chatBox.classList.remove("visible");
     });
 });
