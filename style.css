@@ -5,6 +5,9 @@
 body, html{
     height: 100%;
 }
+html {
+    scroll-behavior: smooth; 
+}
 p, span, a, th, td{
     font-family: "Race Sport";
 }
@@ -21,6 +24,7 @@ p, span, a, th, td{
     animation: animation-chat 2s infinite alternate;
     background-size: 200% 200%;
     box-shadow: 1px 1px 35px rgba(0, 212, 255, 1);
+    z-index: 1000;
 }
 #chatButton{
     width: 130px; 
@@ -55,6 +59,7 @@ p, span, a, th, td{
     transform: scale(0.8);
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
+    z-index: 1000;
 }
 
 #chatBox.visible {
@@ -78,14 +83,14 @@ p, span, a, th, td{
 
 #chatWindow {
     flex: 1;
-    overflow-y: auto; /* Ativa a rolagem vertical */
+    overflow-y: auto; 
     margin-bottom: 15px;
     padding-bottom: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    scrollbar-width: thin; /* Para navegadores compatíveis */
+    scrollbar-width: thin; 
     scrollbar-color: #ffc107 rgba(58, 55, 55, 0.5);
 }
 
@@ -145,23 +150,23 @@ p, span, a, th, td{
     cursor: pointer;
 }
 
-/* Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
+
 #chatWindow::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
+    width: 10px; 
 }
 
 #chatWindow::-webkit-scrollbar-track {
-    background: rgba(58, 55, 55, 0.5); /* Fundo da trilha */
+    background: rgba(58, 55, 55, 0.5); 
     border-radius: 10px;
 }
 
 #chatWindow::-webkit-scrollbar-thumb {
-    background: #ffc107; /* Cor da barra */
-    border-radius: 10px; /* Bordas arredondadas */
+    background: #ffc107; 
+    border-radius: 10px; 
 }
 
 #chatWindow::-webkit-scrollbar-thumb:hover {
-    background: #ffdd00; /* Cor ao passar o mouse */
+    background: #ffdd00; 
 }
 
 
@@ -239,4 +244,41 @@ td a:hover{
 }
 .legenda{
     border-radius: 0px 0px 25px 25px;
+}
+
+.site-footer {
+    background-color: #20232A; 
+    color: #ffffff; 
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.site-footer .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.site-footer .social-icons li {
+    margin: 0 10px;
+}
+
+.site-footer .social-icons a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.site-footer .social-icons a:hover {
+    color: #f1c40f; 
+}
+#pDesenvolvedor{
+    font-size: 13px;
 }

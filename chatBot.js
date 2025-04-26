@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
         if (!userInput) return; 
-    
         
         addMessageToChat(userInput, "userMessage");
     
