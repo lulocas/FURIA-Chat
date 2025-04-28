@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 {
                     headers: {
-                        Authorization: `Bearer toke_de_acesso`,
+                        Authorization: `Bearer TOKEN_DE_ACESSO`,
                         'Content-Type': 'application/json'
                     }
                     
