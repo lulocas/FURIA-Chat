@@ -29,7 +29,52 @@ cd FURIA-Chat
 ```
 
 ### 2. Configure as Credenciais:
+1. Acesse o OAuth 2.0 Playground:
+
+- Abra este link no navegador: OAuth 2.0 Playground.
+
+2. Configuração Inicial:
+
+- No canto superior direito, clique em "Configuration".
+
+- Insira suas credenciais da API. Coloque o Client ID e o Client Secret da sua conta no Google Cloud.
+(Me envie um email solicitando a criação de uma credencial)
+
+- Clique em Close para salvar.
+
+3. Selecione os Escopos da API:
+
+- Na seção "Step 1", selecione os escopos necessários para o seu projeto. Por exemplo: https://www.googleapis.com/auth/dialogflow.
+
+- Clique em Authorize APIs.
+
+4. Autorize o Acesso:
+
+- Você será redirecionada para a tela de login do Google.
+
+- Faça login com a conta associada ao projeto.
+
+5. Troque o Código de Autorização pelo Access Token:
+
+- Após autorizar, um Authorization Code será gerado automaticamente.
+
+- Na seção "Step 2", clique em Exchange authorization code for tokens.
+
+6. Visualize o Access Token:
+
+- Depois que o token for gerado, ele será exibido na seção "Step 3".
+
+- O Access Token e o Refresh Token estarão disponíveis para uso.
+
+7. Troque o token no código:
+   
 - Adicione o token no código como variável de ambiente.
+```bash
+headers: {
+                        Authorization: `Bearer TOKEN_DE_ACESSO`,
+                        'Content-Type': 'application/json'
+                    }
+```
 
 ### 3. Teste o Chatbot:
 Interaja com o chatbot e valide as respostas. Ajuste intenções ou entidades no Dialogflow, se necessário.
